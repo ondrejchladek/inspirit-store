@@ -7,8 +7,7 @@ const Footer = () => {
         <div className="site-footer__top">
           <div className="site-footer__description">
             <h6><Logo /> <span>E</span>-Shop</h6>
-            <p>House My Brand designs clothing for the young, the old & everyone in between – but most 
-              importantly, for the fashionable</p>
+            <p>Navrhujeme oblečení pro mladé, starší a všechny mezi tím – ale nejdůležitější je, že pro ty, kteří mají smysl pro módu.</p>
             <ul className="site-footer__social-networks">
               <li><a href="#"><i className="icon-facebook"></i></a></li>
               <li><a href="#"><i className="icon-twitter"></i></a></li>
@@ -20,33 +19,33 @@ const Footer = () => {
 
           <div className="site-footer__links">
             <ul>
-              <li>Shopping online</li>
-              <li><a href="#">Order Status</a></li>
-              <li><a href="#">Shipping and Delivery</a></li>
-              <li><a href="#">Returns</a></li>
-              <li><a href="#">Payment options</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li>Nakupování online</li>
+              <li><a href="#">Stav objednávky</a></li>
+              <li><a href="#">Doprava a doručení</a></li>
+              <li><a href="#">Vrácení zboží</a></li>
+              <li><a href="#">Možnosti platby</a></li>
+              <li><a href="#">Kontaktujte nás</a></li>
             </ul>
             <ul>
-              <li>Information</li>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Find a store</a></li>
+              <li>Informace</li>
+              <li><a href="#">Dárkové karty</a></li>
+              <li><a href="#">Najít prodejnu</a></li>
               <li><a href="#">Newsletter</a></li>
-              <li><a href="#">Bacome a member</a></li>
-              <li><a href="#">Site feedback</a></li>
+              <li><a href="#">Staňte se členem</a></li>
+              <li><a href="#">Zpětná vazba k webu</a></li>
             </ul>
             <ul>
-              <li>Contact</li>
-              <li><a href="#">store@uikit.com</a></li>
-              <li><a href="#">Hotline: +1 131 138 138</a></li>
+              <li>Kontakt</li>
+              <li><a href="#">obchod@obchod.cz</a></li>
+              <li><a href="#">Tel.: +420 123 456 789</a></li>
             </ul>
           </div>
         </div>
       </div>
-      
+
       <div className="site-footer__bottom">
         <div className="container">
-          <p>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</p>
+          <p>DESIGN BY INSPIRIT - © 2024. ALL RIGHTS RESERVED.</p>
         </div>
       </div>
     </footer>

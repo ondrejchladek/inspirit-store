@@ -21,60 +21,60 @@ const CheckoutPage = () => {
       <section className="cart">
         <div className="container">
           <div className="cart__intro">
-            <h3 className="cart__title">Shipping and Payment</h3>
+            <h3 className="cart__title">Pokladna</h3>
             <CheckoutStatus step="checkout" />
           </div>
 
           <div className="checkout-content">
             <div className="checkout__col-6">
               <div className="checkout__btns">
-                <button className="btn btn--rounded btn--yellow">Log in</button>
-                <button className="btn btn--rounded btn--border">Sign up</button>
+                <button className="btn btn--rounded btn--yellow">Přihlásit se</button>
+                <button className="btn btn--rounded btn--border">Registrovat</button>
               </div>
 
               <div className="block">
-                <h3 className="block__title">Shipping information</h3>
+                <h3 className="block__title">Fakturační adresa</h3>
                 <form className="form">
                   <div className="form__input-row form__input-row--two">
                     <div className="form__col">
-                      <input className="form__input form__input--sm" type="text" placeholder="Email" />
+                      <input className="form__input form__input--sm" type="text" placeholder="E-mail" />
                     </div>
 
                     <div className="form__col">
-                      <input className="form__input form__input--sm" type="text" placeholder="Address" />
+                      <input className="form__input form__input--sm" type="text" placeholder="Adresa" />
                     </div>
                   </div>
                   
                   <div className="form__input-row form__input-row--two">
                     <div className="form__col">
-                      <input className="form__input form__input--sm" type="text" placeholder="First name" />
+                      <input className="form__input form__input--sm" type="text" placeholder="Jméno" />
                     </div>
 
                     <div className="form__col">
-                      <input className="form__input form__input--sm" type="text" placeholder="City" />
+                      <input className="form__input form__input--sm" type="text" placeholder="Město" />
                     </div>
                   </div>
                   
                   <div className="form__input-row form__input-row--two">
                     <div className="form__col">
-                      <input className="form__input form__input--sm" type="text" placeholder="Last name" />
+                      <input className="form__input form__input--sm" type="text" placeholder="Příjmení" />
                     </div>
 
                     <div className="form__col">
-                      <input className="form__input form__input--sm" type="text" placeholder="Postal code / ZIP" />
+                      <input className="form__input form__input--sm" type="text" placeholder="PSČ" />
                     </div>
                   </div>
 
                   <div className="form__input-row form__input-row--two">
                     <div className="form__col">
-                      <input className="form__input form__input--sm" type="text" placeholder="Phone number" />
+                      <input className="form__input form__input--sm" type="text" placeholder="Telefon" />
                     </div>
 
                     <div className="form__col">
                       <div className="select-wrapper select-form">
                         <select>
-                          <option>Country</option>
-                          <option value="Argentina">Argentina</option>
+                          <option>Země</option>
+                          <option value="Česká republika">Česká republika</option>
                         </select>
                       </div>
                     </div>
@@ -85,11 +85,8 @@ const CheckoutPage = () => {
             
             <div className="checkout__col-4">
               <div className="block">
-                <h3 className="block__title">Payment method</h3>
+                <h3 className="block__title">Platební metoda</h3>
                 <ul className="round-options round-options--three">
-                  <li className="round-item">
-                    <img src="/images/logos/paypal.png" alt="Paypal" />
-                  </li>
                   <li className="round-item">
                     <img src="/images/logos/visa.png" alt="Paypal" />
                   </li>
@@ -103,29 +100,21 @@ const CheckoutPage = () => {
                     <img src="/images/logos/discover.png" alt="Paypal" />
                   </li>
                   <li className="round-item">
-                    <img src="/images/logos/ideal-logo.svg" alt="Paypal" />
+                    <img src="/images/logos/paypal.png" alt="Paypal" />
                   </li>
                 </ul>
               </div>
               
               <div className="block">
-                <h3 className="block__title">Delivery method</h3>
+                <h3 className="block__title">Přepravní metoda</h3>
                 <ul className="round-options round-options--two">
                   <li className="round-item round-item--bg">
-                    <img src="/images/logos/inpost.svg" alt="Paypal" />
-                    <p>$20.00</p>
-                  </li>
-                  <li className="round-item round-item--bg">
                     <img src="/images/logos/dpd.svg" alt="Paypal" />
-                    <p>$12.00</p>
+                    <p>95,- Kč</p>
                   </li>
                   <li className="round-item round-item--bg">
                     <img src="/images/logos/dhl.svg" alt="Paypal" />
-                    <p>$15.00</p>
-                  </li>
-                  <li className="round-item round-item--bg">
-                    <img src="/images/logos/maestro.png" alt="Paypal" />
-                    <p>$10.00</p>
+                    <p>115,- Kč</p>
                   </li>
                 </ul>
               </div>
@@ -133,22 +122,22 @@ const CheckoutPage = () => {
             
             <div className="checkout__col-2">
               <div className="block">
-                <h3 className="block__title">Your cart</h3>
+                <h3 className="block__title">Váš košík</h3>
                 <CheckoutItems />
                 
                 <div className="checkout-total">
-                  <p>Total cost</p>
-                  <h3>${priceTotal}</h3>
+                  <p>Cena celkem</p>
+                  <h3>{priceTotal} Kč</h3>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="cart-actions cart-actions--checkout">
-            <a href="/cart" className="cart__btn-back"><i className="icon-left"></i> Back</a>
+            <a href="/cart" className="cart__btn-back"><i className="icon-left"></i> Zpět</a>
             <div className="cart-actions__items-wrapper">
-              <button type="button" className="btn btn--rounded btn--border">Continue shopping</button>
-              <button type="button" className="btn btn--rounded btn--yellow">Proceed to payment</button>
+              <button type="button" className="btn btn--rounded btn--border">Pokračovat v nákupu</button>
+              <button type="button" className="btn btn--rounded btn--yellow">K pokladně</button>
             </div>
           </div>
         </div>

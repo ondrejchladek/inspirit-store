@@ -14,7 +14,7 @@ export default ({ children, title = 'Next.js Ecommerce' }: LayoutType) => {
   return (
     <div className="app-main">
       <Head>
-        <title>Page not found &mdash; { title }</title>
+        <title>Tady nic není &mdash; { title }</title>
       </Head>
 
       <Header isErrorPage />

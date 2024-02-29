@@ -27,20 +27,19 @@ const LoginPage = () => {
         <div className="container">
           <div className="back-button-section">
             <Link href="/products">
-              <a><i className="icon-left"></i> Back to store</a>
+              <a><i className="icon-left"></i> Zpět do e-shopu</a>
             </Link>
           </div>
 
           <div className="form-block">
-            <h2 className="form-block__title">Log in</h2>
-            <p className="form-block__description">Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <h2 className="form-block__title">Přihlasit se</h2>
+            <p className="form-block__description">Přihlašte se prostřednictvím jména a heslo nebo vašeho facebookového nebo gmailového účtu.</p>
             
             <form className="form" onSubmit={handleSubmit(onSubmit)}>
               <div className="form__input-row">
                 <input 
                   className="form__input" 
-                  placeholder="email" 
+                  placeholder="E-mail" 
                   type="text" 
                   name="email"
                   ref={register({
@@ -50,11 +49,11 @@ const LoginPage = () => {
                 />
 
                 {errors.email && errors.email.type === 'required' && 
-                  <p className="message message--error">This field is required</p>
+                  <p className="message message--error">Toto pole je vyžadováno</p>
                 }
 
                 {errors.email && errors.email.type === 'pattern' && 
-                  <p className="message message--error">Please write a valid email</p>
+                  <p className="message message--error">Prosím zadejte správný e-mail</p>
                 }
               </div>
               
@@ -62,12 +61,12 @@ const LoginPage = () => {
                 <input 
                   className="form__input" 
                   type="password" 
-                  placeholder="Password" 
+                  placeholder="Heslo" 
                   name="password"
                   ref={register({ required: true })}
                 />
                 {errors.password && errors.password.type === 'required' && 
-                  <p className="message message--error">This field is required</p>
+                  <p className="message message--error">Toto pole je vyžadováno</p>
                 }
               </div>
 
@@ -81,10 +80,10 @@ const LoginPage = () => {
                       ref={register({ required: false })}
                     />
                     <span className="checkbox__check"></span>
-                    <p>Keep me signed in</p>
+                    <p>Zůstat přihlášený</p>
                   </label>
                 </div>
-                <a href="/forgot-password" className="form__info__forgot-password">Forgot password?</a>
+                <a href="/forgot-password" className="form__info__forgot-password">Zapomenuté heslo?</a>
               </div>
 
               <div className="form__btns">
@@ -92,9 +91,9 @@ const LoginPage = () => {
                 <button type="button" className="btn-social google-btn"><img src="/images/icons/gmail.svg" alt="gmail" /> Gmail</button>
               </div>
 
-              <button type="submit" className="btn btn--rounded btn--yellow btn-submit">Sign in</button>
+              <button type="submit" className="btn btn--rounded btn--yellow btn-submit">Přihlásit se</button>
 
-              <p className="form__signup-link">Not a member yet? <a href="/register">Sign up</a></p>
+              <p className="form__signup-link">Nejste ještě naším zákazníkem? <a href="/register">Registrovat</a></p>
             </form>
           </div>
 
